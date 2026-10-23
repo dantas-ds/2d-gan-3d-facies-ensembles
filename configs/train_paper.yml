@@ -1,0 +1,27 @@
+data_h5: data/facies_scales.h5
+out_dir: runs/paper
+n_classes: 3
+latent_shape: [4, 4, 4]
+depths: [128, 128, 128, 128, 64, 32]
+extras: [0, 1, 1, 1, 1, 2]
+kernels: [3, 3, 3, 3, 3, 3]
+fc_depth: 256
+batch_size: 32
+lambda_gp: 10.0
+epsilon_d: 0.001
+n_critic: 1
+log_every: 500
+save_every: 10000
+num_workers: 2
+gpu: true
+lr: 0.0015
+lr_schedule:
+  0: 0.0025
+  1: 0.0025
+  2: 0.0025
+  3: 0.0025
+  4: 0.0025
+  5: 0.0015
+max_iter_at_scale: [160000, 320000, 320000, 320000, 320000, 5120000]
+alpha_n_jumps: [0, 5000, 5000, 5000, 5000, 5000]
+alpha_size_jumps: [0, 32, 32, 32, 32, 32]

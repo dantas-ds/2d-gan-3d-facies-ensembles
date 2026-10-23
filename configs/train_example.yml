@@ -1,0 +1,23 @@
+data_h5: data/example_scales.h5
+out_dir: runs/example
+n_classes: 3
+latent_shape: [4, 4, 4]
+depths: [128, 128, 128]
+extras: [0, 1, 1]
+kernels: [3, 3, 3]
+batch_size: 16
+lambda_gp: 10.0
+epsilon_d: 0.001
+n_critic: 1
+log_every: 10
+save_every: 50
+num_workers: 0
+gpu: true
+lr: 0.0025
+lr_schedule:
+  0: 0.0025
+  1: 0.0025
+  2: 0.0025
+max_iter_at_scale: [50, 50, 50]
+alpha_n_jumps: [0, 10, 10]
+alpha_size_jumps: [0, 16, 16]

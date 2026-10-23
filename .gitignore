@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+runs/
+outputs/
+*.h5
+_local_gansim_originals/
+*.pt
+!checkpoints/.gitkeep
+!checkpoints/ganriver_i_s5_i460000.pt
+!checkpoints/petrel_s5_i580000.pt
+!checkpoints/README.md
+.DS_Store
+*.pdf
+images/*.log
+images/*.aux
